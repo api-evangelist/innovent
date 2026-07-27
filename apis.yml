@@ -1,8 +1,26 @@
 aid: innovent
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/innovent.png
 name: Innovent
-description: 'Innovent is a company surfaced as a portfolio company of hongshan and added to the API Evangelist
-  network as a stub for enrichment. Sector: healthcare. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: 'Innovent Biologics (信达生物制药) is a biopharmaceutical company founded in 2011 and
+  headquartered in the Suzhou Industrial Park, China, that discovers, develops, manufactures, and
+  commercializes high-quality biologic medicines for the treatment of oncology, autoimmune,
+  cardiovascular and metabolic, and ophthalmology diseases. Its portfolio includes the PD-1 inhibitor
+  Tyvyt (sintilimab), developed in partnership with Eli Lilly, alongside a broad pipeline of monoclonal
+  antibodies and other biologics. Innovent is listed on the Hong Kong Stock Exchange (01801.HK) and was
+  surfaced through the Hongshan (formerly Sequoia Capital China) portfolio. Innovent is a therapeutics
+  company and does not publish a public developer API surface; this profile captures its corporate and
+  domain-security identity in the API Evangelist network.'
 url: https://raw.githubusercontent.com/api-evangelist/innovent/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +30,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Healthcare
+- Biotechnology
+- Pharmaceuticals
+- Biologics
+- Oncology
+- Life Sciences
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +46,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/innovent-domain-security.yml
 - type: Website
   url: https://innoventbio.com
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
